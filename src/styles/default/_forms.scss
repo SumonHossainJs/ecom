@@ -1,0 +1,126 @@
+// ------------ forms styles ---------------
+
+
+input,
+button,
+select,textarea{
+    background-color: var(--color-lighter);
+    border: 1px solid var(--color-border);
+    transition:  all 0.4s ease-in-out 0s;
+    color: var(--color-heading);
+    width: 100%;
+    &:focus,
+    &:active{
+        outline: none;
+        border-color: var(--color-primary);
+    }
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit']{
+    -webkit-appearance: button;
+}
+
+input{
+    height: 40px;
+    padding: 0 15px;
+}
+
+select,.select2{
+    cursor: pointer;
+    transition: .3s;
+    height: 55px;
+    padding: 0 30px;
+    outline: none;
+    color: var(--color-body);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--color-border-light);
+    border-radius:6px ;
+    background: url('/images/icons/arrow-icon.png') 95% center no-repeat transparent;
+    padding-right: 32px;
+    font-size: var(--font-size-b1);
+    font-family: var(--font-secondary);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea{
+    font-size: var(--font-size-b2);
+    font-weight: 400;
+    height: auto;
+    line-height: 60px;
+    background: #fff;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+    padding: 0 30px;
+    outline: none;
+    border: var(--border-width) solid var(--color-border);
+    border-radius: var(--radius);
+
+    &::placeholder{
+        color:var(--color-body);
+        opacity: 1;
+    }
+    &::-ms-input-placeholder{
+        color: var(--color-body);
+    }
+    &:-ms-input-placeholder{
+        color: var(--color-body);
+    }
+
+    &.p-holder__active{
+        border-color: var(--color-primary);
+        &::placeholder{
+            color:var(--color-primary);
+            opacity: 1;
+        }
+        
+        &::-ms-input-placeholder{
+            color: var(--color-primary);
+        }
+        &:-ms-input-placeholder{
+            color: var(--color-primary);
+        }
+    }
+    &.p-holder__error{
+        border-color: red;
+        &::placeholder{
+            color:red;
+            opacity: 1;
+        }
+        
+        &::-ms-input-placeholder{
+            color: red;
+        }
+        &:-ms-input-placeholder{
+            color: red;
+        }
+        &:focus {
+            border-color: #f4282d;
+        }
+    }
+    &:focus {
+        border-color: var(--color-primary);
+    }
+
+}
+
+.input-active{
+    @extend .p-holder__active;
+    input{
+        @extend .p-holder__active;
+    }
+}
+.input-error{
+    @extend .p-holder__error;
+    input{
+        @extend .p-holder__error;
+    }
+}
