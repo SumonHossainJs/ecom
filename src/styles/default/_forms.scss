@@ -151,7 +151,7 @@ input[type="radio"]{
             border-radius: 2px;
             transform: rotate(-45deg);
             opacity: 0;
-            transition: all.3s;
+            transition: all .3s;
         }
 
     }
@@ -216,7 +216,7 @@ input[type="radio"]{
         resize:  none;
         padding: 15px;
         font-size: var(--font-size-b2);
-        @extend %transiton;
+        @extend %transition;
         background-color: #fff;
         border: 1px solid var(--color-light);
         line-height: 1.5;
@@ -242,7 +242,7 @@ input[type="submit"]{
     font-size: var(--font-size-b2);
     line-height: var(--line-height-b3);
     border: 2px solid var(--color-primary);
-    @extend %transiton;
+    @extend %transition;
     &:hover{
         background: transparent;
         color: var(--color-primary);
