@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeaderBrand = () => {
   return (
-    <div>HeaderBrand</div>
+    <div></div>
   )
 }
 
