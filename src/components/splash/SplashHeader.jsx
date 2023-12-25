@@ -12,7 +12,6 @@ const SplashHeader = () => {
 	useEffect(() => {
 	  const mainMenu = axilMainmenu.current;
 	  const mainMenuHeight = axilMainmenu.current.clientHeight;
-    console.log(axilMainmenu.current.clientHeight);
 	  const mainmenuPlaceholder = axilPlaceholder.current;
 	  window.addEventListener("scroll", (event) => {
 		  if (window.scrollY > 40) {
@@ -27,10 +26,13 @@ const SplashHeader = () => {
 
   return (
     <header className='sumon-header header-style-3'>
-      <HeaderTopNotify>
+      <HeaderTopNotify bgImage="/images/others/campaign-bg2.png">
         <p>
-          Al hamdulilah Subhan allah La Ilaha illalah
-          <a href="#">
+          Introductory Offer Get Upto 50% Off { ''}
+          <a
+            target="_blank"
+            href="#"
+          >
             Buy Now
           </a>
         </p>
@@ -38,7 +40,7 @@ const SplashHeader = () => {
       <div className="sumon-sticky-placeholder" ref={axilPlaceholder}/>
       <div className="axil-mainmenu" ref={axilMainmenu}>
         Al ahmdulilah
-        <i class='bx bx-x'></i>
+        <i className='bx bx-x'></i>
       </div>
       </header>
   )
