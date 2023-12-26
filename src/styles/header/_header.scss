@@ -1,0 +1,59 @@
+// -------------------
+// header Styles
+// -------------------
+
+.header-brand{
+    a{
+        display: block;
+        img{
+            @media only screen and (max-width:991px) {
+                max-height: 35px;
+            }
+            @media only screen and (max-width:320px) {
+                max-height: 30px;
+            }
+
+        }
+    }
+}
+
+.logo-light{
+    display: none m !important;
+}
+
+.axil-mainmenu{
+    .header-nav{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .header-main-nav{
+            flex: 1;
+            margin: 0 50px;
+            @media only screen and (max-width: 991px) {
+                margin: 0;
+            }
+        }
+    }
+    &.axil-sticky{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 5;
+        background-color: var(--color-white);
+        box-shadow: 0 2px 10px 0 rgba(0,0,0,0.10);
+        transition: var(--transition);
+        .mainmenu{
+            >li{
+                >a{
+                    height: 80px;
+                    line-height: 80px;
+                    &.before{
+                        bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+   
+}
