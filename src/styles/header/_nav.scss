@@ -40,6 +40,13 @@
                 opacity: 0;
                 transition: .5s;
             }
+            &:hover{
+                color: var(--color-black);
+                &::before{
+                    opacity: 1;
+                    width: 100%;
+                }
+            }
         }
     }
 }
