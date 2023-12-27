@@ -162,10 +162,10 @@ const SplashHeader = () => {
               <div className="header-btn">
                 <a
                   target="_blank"
-                  href="https://themeforest.net/item/etrade-multipurpose-ecommerce-nextjs-template/48473978"
+                  href="#"
                   className="axil-btn btn-bg-primary"
                 >
-                  <i className="fal fa-shopping-cart" /> Buy Now
+                  <i class='bx bx-cart'></i> Buy Now
                 </a>
               </div>
             </div>

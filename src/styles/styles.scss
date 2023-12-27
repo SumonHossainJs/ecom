@@ -19,7 +19,13 @@ Header Styles
 ================================== */
 @import 'header/header-top';
 @import 'header/header';
+
+// ------ Nav styles ---------
 @import "header/nav";
+
+// -----------button styles ----------
+
+@import "elements/button";
 
 // -----------------------
 // Spacing -----------
