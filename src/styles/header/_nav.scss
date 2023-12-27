@@ -1,0 +1,45 @@
+.mainmenu-nav{
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+.mainmenu{
+    @extend %liststyle;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -24px;
+    @media #{$smlg-device} {
+        margin: 0 -15px;
+    }
+    >li{
+        margin: 0 24px;
+        @media #{$smlg-device} {
+            margin: 0 15px;
+        }
+        >a{
+            color:var(--color-heading);
+            font-weight: 700;
+            font-size: 15px;
+            font-family: var(--font-primary);
+            line-height: 80px;
+            height: 80px;
+            display: flex;
+            position: relative;
+            transition: var(--transition);
+            &::before{
+                content: "";
+                height: 2px;
+                width: 0;
+                background-color: var(--color-black);
+                position: absolute;
+                bottom: 29px;
+                left: 0;
+                opacity: 0;
+                transition: .5s;
+            }
+        }
+    }
+}
