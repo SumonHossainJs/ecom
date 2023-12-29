@@ -12,6 +12,7 @@
 @import "default/shortcode";
 @import "default/forms";
 @import "default/common";
+@import "default/reset";
 
 
 /* ===============================
@@ -20,12 +21,15 @@ Header Styles
 @import 'header/header-top';
 @import 'header/header';
 
+
 // ------ Nav styles ---------
 @import "header/nav";
 
 // -----------button styles ----------
 
 @import "elements/button";
+@import "elements/splash";
+@import 'elements/section';
 
 // -----------------------
 // Spacing -----------

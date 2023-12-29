@@ -7,7 +7,7 @@ const SplashBanner = () => {
   const BannerData = {
     title: "eTrade Multipurpose eCommerce Next JS Template",
     subtitle: "eCommerce",
-    subtitleIcon: "fas fa-fire",
+    subtitleIcon: "bx bxs-hot",
     mainMockup: "/images/preview/banner-mockup.png",
     mainBg: "/images/preview/banner-bg.png"
   }
@@ -52,7 +52,7 @@ const SplashBanner = () => {
                     </h1>
                   </div>
                 </div>
-                <div className="theme-brif">
+                <div className="theme-brief">
                   {DemonElement.map((data,index) => (
                     <div className="single-counter" key={index}>
                       <span className="subtile">{data.title}</span>
