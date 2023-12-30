@@ -37,7 +37,7 @@ const SplashHomeDemo = () => {
       <div className="container">
         <SectionTitle
           subtitle="Home pages"
-          subtitleIcon=""
+          subtitleIcon="bx bxs-hot"
           subColor="highLighter-secondary"
           title='Our Tamplate is just <br/> Ready to use'
         />
@@ -62,6 +62,18 @@ const SplashHomeDemo = () => {
                 </div>
             </div>
           ))}
+          <div className="col-lg-6 col-md-6 col-12">
+            <div className="pv-single-demo commin">
+              <div className="thumb box">
+                <Image
+                src={"/images/preview/comming-soon.png"}
+                height={517}
+                width={630}
+                alt='Comming Soon page'
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
