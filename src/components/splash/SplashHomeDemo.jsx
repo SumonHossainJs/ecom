@@ -38,7 +38,7 @@ const SplashHomeDemo = () => {
         <SectionTitle
           subtitle="Home pages"
           subtitleIcon="bx bxs-hot"
-          subColor="highLighter-secondary"
+          subColor="highlighter-secondary"
           title='Our Tamplate is just <br/> Ready to use'
         />
         <div className="row">

@@ -2,6 +2,7 @@
 /*-------------------------
 Section Heading  
 --------------------------*/
+
 .title-highlighter {
     font-size: 14px;
     font-weight: var(--s-bold);
@@ -89,22 +90,3 @@ Section Heading
 	}
 }
 
-.flash-sale-section {
-	margin-bottom: 60px;
-	@media #{$sm-layout} {
-		margin-bottom: 50px;
-	}
-	.section-title-wrapper {
-		margin-bottom: 0;
-		@media only screen and (max-width: 991px) {
-			padding-right: 80px;
-		}
-		@media #{$sm-layout} {
-			padding-right: 100px;
-			margin-bottom: 30px;
-		}
-		.title {
-			margin-bottom: 0;
-		}
-	}
-}
