@@ -29,11 +29,7 @@ const SplashFeatures = () => {
       icon:"/images/preview/features-icon-02.png",
       text:'Our Template is Perfect for all devices. It is made by Next.js Structure. Next.js was designed to provide high performance in mind.'
     },
-    {
-      title:"Fully <br/> Customizable",
-      icon:"/images/preview/features-icon-02.png",
-      text:'Our Template is Perfect for all devices. It is made by Next.js Structure. Next.js was designed to provide high performance in mind.'
-    },
+  
   ]
   return (
     <div>SplashFeatures</div>
