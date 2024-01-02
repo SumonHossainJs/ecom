@@ -314,3 +314,29 @@
         }
     }
 }
+
+// Features Section starts
+
+.pv-feature-area{
+    padding-bottom: 60px;
+}
+
+.pv-feature-box{
+    border-top: 1px solid #f1f1f1;
+    padding-top: 80px;
+}
+
+.pv-feature{
+    text-align: center;
+    height: 100%;
+    padding-bottom: 30px;
+    .service-box{
+        height: 100%;
+        margin-bottom: 0;
+        .title{
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+    }
+}

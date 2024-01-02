@@ -44,12 +44,12 @@ const SplashInnerDemo = () => {
     
   ]
   return (
-    <div className='axil-section-gap pv-demo-area'>
+    <div className='axil-section-gap pv-inner-demo-area'>
       <div className="container">
         <SectionTitle
         pClass="section-title-center"
         subtitle='Inner Pages'
-        subtitleIcon="box bx-fire"
+        subtitleIcon="bx bxs-hot"
         title='Eye catching Pre-build <br/> Inner pages'
         />
         <div className="row">
