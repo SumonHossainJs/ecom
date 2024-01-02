@@ -476,3 +476,20 @@
         }
     }
 }
+
+// pv-footer
+
+
+.pv-footer-area{
+    background-color: var(--color-white);
+    padding: 10px 0;
+    position: relative;
+    z-index: 2;
+    .copyright-default .quick-link li::after{
+        display: none;
+    }
+    
+}
+.quick-link li{
+    list-style: none;
+}
