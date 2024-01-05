@@ -7,6 +7,10 @@ import SplashHomeDemo from "@/components/splash/SplashHomeDemo";
 import SplashInnerDemo from "@/components/splash/SplashInnerDemo";
 import SplashSupport from "@/components/splash/SplashSupport";
 
+export const metadata = {
+	title: 'eTrade Multipurpose eCommerce Next JS Template',
+  description: 'eTrade Multipurpose eCommerce Nextjs Template',
+}
 
 export const HomeOne = () => {
   return( <>
