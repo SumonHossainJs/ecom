@@ -147,3 +147,34 @@
         }
     }
 }
+
+// ----- header-link-top --------------
+.header-top-link{
+    .quick-link{
+        @extend %liststyle;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -18;
+        justify-content: flex-end;
+
+        @media #{$large-mobile} {
+            justify-content: center;
+            margin: 5px 0;
+        }
+
+        li{
+            margin: 0;
+            padding: 0 18px;
+            position: relative;
+            a{
+                font-size: var(--font-size-b1);
+                color: var(--color-body);
+                line-height: var(--line-height-b2);
+                display: inline-block;
+                &:hover{
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
