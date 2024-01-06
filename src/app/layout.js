@@ -6,20 +6,20 @@ import "../styles/styles.scss";
 import { Providers } from "@/store/provider";
 
 export const metadata = {
-	title: 'eTrade Multipurpose eCommerce Next JS Template',
-  description: 'eTrade Multipurpose eCommerce Nextjs Template',
-}
-
+  title: "eTrade Multipurpose eCommerce Next JS Template",
+  description: "eTrade Multipurpose eCommerce Nextjs Template",
+};
 
 const RootLayout = ({ children }) => {
+  useEffect(() => {
+    window.bootstrap = require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
 
   return (
     <html lang="en">
       <head>
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-        />
+        <link rel="stylesheet" href="/css/font-awesome.css" />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link

@@ -51,3 +51,99 @@
         }
     }
 }
+
+.header-style-1 {
+    .header-top-campaign {
+        .campaign-content {
+            p {
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+
+// ----------------------
+// ---------------- Header top style ---------
+// 
+.axil-header-top{
+    padding: 8px 0;
+}
+
+
+.header-top-dropdown {
+    display: flex;
+    align-items: center;
+    @media #{$large-mobile} {
+        justify-content: center;
+    }
+    .dropdown {
+        max-width: 70px;
+        margin-right: 20px;
+        @media #{$large-mobile} {
+            margin-right: 10px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        .dropdown-toggle {
+            font-size: 14px;
+            color: var(--color-body);
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            &:after {
+                content: "\f107";
+                font-family: var(--font-awesome);
+                border: none;
+                margin-left: 5px;
+                margin-top: 1px;
+            }
+        }
+        .dropdown-menu {
+            min-width: 11rem;
+            border: none;
+            box-shadow: var(--shadow-primary);
+            display: block !important;
+            top: 35px;
+            visibility: hidden;
+            opacity: 0;
+            transition: var(--transition);
+            li {
+                margin: 5px 10px;
+            }
+            .dropdown-item {
+                font-size: 14px;
+                border-radius: 6px;
+                &:hover {
+                    background-color: var(--color-secondary);
+                    color: var(--color-white);
+                }
+            }
+            &.show {
+                visibility: visible;
+                opacity: 1;
+                top: 30px;
+            }
+        }
+    }
+    &.dropdown-box-style {
+        .dropdown {
+            max-width: 100%;
+            .dropdown-toggle {
+                color: var(--color-heading);
+                font-weight: 700;
+                border: 1px solid #f0f0f0;
+                border-radius: 6px;
+                padding: 10px 20px;
+                justify-content: center;
+               &:after {
+                   font-weight: 400;
+               }
+               &:hover {
+                   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, .06);
+               }
+            }
+        }
+    }
+}

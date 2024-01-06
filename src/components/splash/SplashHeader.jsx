@@ -84,8 +84,8 @@
 
 "use client";
 import { useEffect, useRef } from "react";
-import HeaderBrand from "../header/HeaderBrand";
-import HeaderTopNotify from "../header/HeaderTopNotify";
+import HeaderBrand from "../header/elements/HeaderBrand";
+import HeaderTopNotify from "../header/elements/HeaderTopNotify";
 
 const SplashHeader = () => {
 	const axilPlaceholder = useRef();
