@@ -64,7 +64,7 @@ const HeaderOne = () => {
             <div className={`header-main-nav ${MenuOption.isMobileMenuOpen ? "open": ''}`}>
                 <Nav/>
             </div>
-            <HeaderActions searchIcon/>
+            <HeaderActions searchIcon />
           </div>
         </div>
       </div>
