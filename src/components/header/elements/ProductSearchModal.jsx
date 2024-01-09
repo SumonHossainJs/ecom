@@ -2,34 +2,35 @@
 import Link from "next/link";
 import { useState } from "react";
 import ProductsData from "@/Data/Products";
-import ProductPrice from "@/components/product/elements/ProductPrice";
-import ProductRating from "@/components/product/elements/ProductRating";
 import ProductThumbnail from "@/components/product/elements/ProductThumbnail";
 import ProductTitle from "@/components/product/elements/ProductTitle";
-import ActionButton from "@/components/product/elements/ActionButton";
+import ProductPrice from "@/components/product/elements/ProductPrice";
+import ProductRating from "@/components/product/elements/ProductRating";
+import ActionButtons from "@/components/product/elements/ActionButton";
 
 const ProductSearchModal = (props) => {
   const getProducts = ProductsData;
   const [productQuery, setProductQuery] = useState([]);
 
   const SearchInputHandler = (inputValue) => {
-    if (inputValue > 0) {
-      let matchingData = getProducts.filter((products) =>
-        products.title.toLowerCase().includes(inputValue.toLowerCase())
+    if (inputValue.length > 0) {
+      let matchingData = getProducts.filter((product) =>
+        product.title.toLowerCase().includes(inputValue.toLowerCase())
       );
       setProductQuery(matchingData);
     } else {
       setProductQuery([]);
     }
   };
+
   return (
     <>
-      <div className={`header-search-model ${props.toggler ? "open" : ""}`}>
+      <div className={`header-search-modal ${props.toggler ? "open" : ""}`}>
         <button
           className="card-close sidebar-close"
           onClick={props.toggleHandler}
         >
-          <i className="fas fa-times"></i>
+          <i className="fas fa-times" />
         </button>
         <div className="header-search-wrap">
           <div className="card-header">
@@ -37,18 +38,18 @@ const ProductSearchModal = (props) => {
               <input
                 type="search"
                 className="form-control"
-                placeholder="Write something...."
+                placeholder="Write Something...."
                 onChange={(e) => SearchInputHandler(e.target.value)}
               />
               <button className="axil-btn btn-bg-primary">
-                <i className="far fa-search"></i>
+                <i className="far fa-search" />
               </button>
             </div>
           </div>
           <div className="card-body">
             <div className="search-result-header">
               <h6 className="title">{productQuery.length} Result Found</h6>
-              <Link href={"/shop"}>View All</Link>
+              <Link href="/shop">View All</Link>
             </div>
             <div className="psearch-results">
               {productQuery &&
@@ -62,12 +63,12 @@ const ProductSearchModal = (props) => {
                       />
                     </div>
                     <div className="product-content">
-                      <ProductRating rating={data}/>
+                      <ProductRating rating={data} />
                       <div onClick={props.toggleHandler}>
-                        <ProductTitle productTitle={data} titleTag='h6'/>
+                        <ProductTitle productTitle={data} titleTag="h6" />
                       </div>
-                      <ProductPrice price={data}/>
-                      <ActionButton productAction={data} wishlistBtn cartBtn/>
+                      <ProductPrice price={data} />
+                      <ActionButtons productAction={data} wishlistBtn cartBtn />
                     </div>
                   </div>
                 ))}
@@ -75,6 +76,11 @@ const ProductSearchModal = (props) => {
           </div>
         </div>
       </div>
+      {props.toggler ? (
+        <div className="closeMask" onClick={props.toggleHandler}></div>
+      ) : (
+        ""
+      )}
     </>
   );
 };
