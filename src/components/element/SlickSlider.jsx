@@ -2,7 +2,7 @@ import React from 'react'
 
 const SlickSlider = () => {
   return (
-    <div>SlickSlider</div>
+    <div>Work in it</div>
   )
 }
 
